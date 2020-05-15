@@ -1,6 +1,6 @@
 # 8-Puzzle-by-A-Star-Search
-This python file solves 8 Puzzle using A* Search.
-<br>In Development
+This python file solves 8 Puzzle using A* Search.<br>
+<br><b>Current Status:</b> Currently, the solver prints all the possible steps it has explored leading to the answer. I am currently looking for a way to print only those steps that are relevant to the answer. Let me know if you have anything in mind.
 
 ## Execution Instructions
 To run, use the following notation in command prompt:<br>
