@@ -46,6 +46,19 @@ class Puzzle8Solver:
                 else:
                     print(j, end=" ")
             print()
+	
+	def draw_tile(map, position, kwargs):
+
+		# Get the map value
+		value = map.get(position)
+		# Check if we should print the path
+		if 'path' in kwargs and position in kwargs['path']: value = '+'
+		# Check if we should print start point
+		if 'start' in kwargs and position == kwargs['start']: value = '@'
+		# Check if we should print the goal point
+		if 'goal' in kwargs and position == kwargs['goal']: value = '$'
+		# Return a tile value
+		return value 
 
     def solve(self):
         self.printArr(self.current)
